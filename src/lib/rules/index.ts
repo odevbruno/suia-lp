@@ -1,7 +1,6 @@
 // lib/rules/index.ts
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { IDemand } from '@/interfaces';
-import { type Rules } from 'fire-sdk/client';
 import z from 'zod';
 
 export const collections = {
@@ -16,17 +15,7 @@ export const DemandSchema = z
   })
   .strict();
 
-export const consumerRules: Rules = {
+export const consumerRules: any = {
   // Escreva as regras de negócios das API's aqui !
-  collections: {
-    [collections.demands]: {
-      schemaCreate: DemandSchema,
-      schemaUpdate: DemandSchema,
-      create: async (data: IDemand, session) => {
-        data.status = 'pending';
-        data.createdEmail = session?.email!;
-        return data;
-      },
-    },
-  },
+  collections: {},
 };
