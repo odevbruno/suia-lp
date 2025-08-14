@@ -2,12 +2,11 @@
 
 import { motion } from 'framer-motion';
 import Navbar from '../../appbar';
-import { PropsHero } from '@/interfaces';
 
-export default function Hero(props: PropsHero) {
+export default function Hero() {
   return (
     <>
-      <Navbar {...props.navbar} />
+      <Navbar />
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden isolate">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-primary/20 blur-3xl rounded-full animate-pulse" />

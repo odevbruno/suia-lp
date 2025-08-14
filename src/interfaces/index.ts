@@ -1,4 +1,3 @@
-import { PropsNavbar } from '@/components/appbar';
 import { HeaderPageProps } from '@/components/header-page';
 import { DemandSchema } from '@/lib/rules';
 import { Dispatch, SetStateAction } from 'react';
@@ -60,12 +59,7 @@ export type PropsHeaderPage = {
   subtitle?: string;
 };
 
-export type PropsHero = {
-  navbar: PropsNavbar;
-};
-
 export type PropsDashboard = {
-  navbar: PropsNavbar;
   header: HeaderPageProps;
   demands: IDemand[];
   goToDetail: (id: string) => void;

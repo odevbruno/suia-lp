@@ -2,15 +2,8 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { IUseSession } from '@/interfaces';
 
-export type PropsNavbar = {
-  onClick: () => void;
-  text?: string;
-  session?: IUseSession['session'];
-};
-
-export default function Navbar(props: PropsNavbar) {
+export default function Navbar() {
   // const session = props?.session;
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-muted-foreground/10">
@@ -55,7 +48,7 @@ export default function Navbar(props: PropsNavbar) {
               // onClick={props?.onClick}
               className={`px-6 py-2 text-sm font-medium rounded-lg border border-muted-foreground/20 text-foreground hover:bg-muted/40 transition-all duration-300`}
             >
-              {props?.text || 'Entrar'}
+              {'Entrar em contato'}
             </button>
           </Link>
         </div>

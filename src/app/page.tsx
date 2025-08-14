@@ -11,7 +11,6 @@ import { IFormDemand } from '@/interfaces';
 import { DemandSchema } from '@/lib/rules';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useCallback } from 'react';
-// import { sdk } from 'fire-sdk/client';
 
 const defaultValuesDemand = {
   whatsapp: '',
@@ -47,25 +46,9 @@ export default function Home() {
     [],
   );
 
-  const props = {
-    session: null,
-    loading: false,
-    onClickAuth: () => {
-      // !!session?.uid
-      //   ? navigate.push('/dashboard')
-      //   : handleLogin({ keyError: 'handle-login-appbar' });
-    },
-  };
-
   return (
     <div>
-      <Hero
-        navbar={{
-          onClick: props.onClickAuth,
-          session: props?.session,
-          text: 'Entrar em contato',
-        }}
-      />
+      <Hero />
       <HowWorks />
       <Examples />
       <Benefits />

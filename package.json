@@ -1,6 +1,6 @@
 {
-  "name": "sua-ia-app",
-  "version": "0.0.2",
+  "name": "suIA",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
