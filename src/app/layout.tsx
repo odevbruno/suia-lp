@@ -5,7 +5,7 @@ import './tailwind.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  applicationName: 'myIA',
+  applicationName: 'SuIA',
   title: 'SuIA — Serviços com Inteligência Artificial',
   description:
     'Transformamos suas demandas em soluções com inteligência artificial sob medida',
